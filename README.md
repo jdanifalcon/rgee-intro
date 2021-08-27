@@ -168,11 +168,15 @@ Do you want restart your R session?
 
 Para empezar, vamos a cargar la extensión que nos permite ejecutar código de R en Colab:
 
-      %load_ext rpy2.ipython
+```r 
+%load_ext rpy2.ipython
+```
  
 Hay que indicar que esta es una "cell-magic" que usa R, y en cada celda mágica se tiene que poner el simbolo de R:
   
-       %%R
+```r 
+%%R
+```
 
 Para poder instalar **rgee** primero debemos instalar las librerías **remotes** y **rstudioapi**
 
