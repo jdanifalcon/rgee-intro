@@ -166,9 +166,13 @@ Do you want restart your R session?
 ```
 ## 6. instalación de rgee en Google Colab
 
+Para empezar, vamos a cargar la extensión que nos permite ejecutar código de R en Colab:
+
+      %load_ext rpy2.ipython
+ 
 Hay que indicar que esta es una "cell-magic" que usa R, y en cada celda mágica se tiene que poner el simbolo de R:
   
-  %%R
+       %%R
 
 Para poder instalar **rgee** primero debemos instalar las librerías **remotes** y **rstudioapi**
 
@@ -180,6 +184,7 @@ install.packages('rgee')
 ```
 ### instalamos los paquetes de rgee
 ```r 
+%%R
 library(rgee)
 ee_install()
 ```
