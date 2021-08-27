@@ -164,3 +164,22 @@ Do you want restart your R session?
 
 >1
 ```
+## 6. instalación de rgee en Google Colab
+
+Hay que indicar que esta es una "cell-magic" que usa R, y en cada celda mágica se tiene que poner el simbolo de R:
+  
+  %%R
+
+Para poder instalar **rgee** primero debemos instalar las librerías **remotes** y **rstudioapi**
+
+``` r
+%%R
+install.packages('remotes')
+install.packages('rstudioapi')
+install.packages('rgee') 
+```
+### instalamos los paquetes de rgee
+```r 
+library(rgee)
+ee_install()
+```
